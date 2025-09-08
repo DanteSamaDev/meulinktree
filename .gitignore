@@ -1,0 +1,25 @@
+<!-- filepath: c:\Users\maril\Codigos Joaquim\WorkSpace\linktree\.gitignore -->
+# Arquivos e pastas ignorados pelo Git
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# Node.js (caso use futuramente)
+node_modules/
+npm-debug.log*
+
+# Build/Deploy temporários
+dist/
+build/
+.env
+
+# Outros
+*.swp
