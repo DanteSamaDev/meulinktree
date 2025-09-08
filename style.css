@@ -1,0 +1,133 @@
+body {
+    background-color: #121212;
+    background-image:
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.05) 2%, transparent 20%),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 2%, transparent 20%);
+    font-family: 'Cinzel', serif;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(18, 18, 18, 0.8);
+    border: 1px solid #333;
+    padding: 32px 24px;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(138, 3, 3, 0.3);
+    margin-top: 48px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    object-fit: cover;
+    border: 3px solid #8A0303;
+    filter: grayscale(30%);
+    transition: all 0.3s ease-in-out;
+}
+
+.avatar:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #8A0303;
+}
+
+h1 {
+    margin: 0 0 24px 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #E0E0E0;
+    text-shadow: 0 0 5px #8A0303, 0 0 10px #8A0303;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.links a {
+    background: transparent;
+    color: #E0E0E0;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    border: 1px solid #8A0303;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.links a:hover {
+    background: #8A0303;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(138, 3, 3, 0.7);
+    transform: translateY(-2px);
+}
+
+.icon-highlight {
+    color: #8A0303 !important;
+    background: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 1.5em;
+    box-shadow: 0 2px 8px rgba(138,3,3,0.15);
+    transition: color 0.3s, background 0.3s;
+    margin-bottom: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links a:hover .icon-highlight {
+    color: #fff !important;
+    background: #8A0303;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 16px 0 0 0;
+    color: #8A0303;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    background: transparent;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px 4px;
+        margin-top: 24px;
+        max-width: 98vw;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    .links a {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
